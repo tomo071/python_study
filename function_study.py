@@ -1,0 +1,7 @@
+a=int(input("a"))
+b=int(input("b"))
+c=range(a,b)
+print(len(c))
+print(min(c))
+print(max(c))
+print(sum(c))
