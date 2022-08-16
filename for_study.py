@@ -7,3 +7,8 @@ for num in range(i):
   else:
     print(number + "奇数")
 print(rnd.randrange(num))
+w=0
+while w<10:
+  w+=1
+  print(w,end="")
+print(w)
