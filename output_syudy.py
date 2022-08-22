@@ -1,4 +1,12 @@
+from multiprocessing.sharedctypes import Value
+
+
 for i in range(10):
   print("%d,abcdefg"%i)
-#python output_syudy.py>result.txt：上書き
-#python output_syudy.py>>result.txt：追加
+
+try:
+  x = int(input("Input>"))
+except ValueError:
+  print("整数を入力してください")
+  exit()
+print(x)
