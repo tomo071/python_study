@@ -9,5 +9,10 @@ def get_data(file):
 px,py = get_data("sample_2d.csv")
 print(px,py)
 import matplotlib.pyplot as plt
+import numpy as np
+a,b = np.polyfit(px,py,1)
+rx = [min(px),max(px)]
+ry = [a*x+b for x in rx]
+plt.plot(rx,ry)
 plt.scatter(px,py)
 plt.show()
