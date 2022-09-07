@@ -14,10 +14,11 @@ page_data['contents'] = '<h2>'+ page_data['page_title'] +'</h2><p>Pythonを使�
 page_data['sidebar'] = '<p>サイドバー</p>'
 page_data['footer'] = '<p>フッター</p>'
 
-with webbrowser.open('html2.html','r') as file:
+with open('html2.html','r') as file:
     html = file.read()
 file.closed
 
 for key, value in page_data.items():
     html = html.replace('{% ' + key + ' %}', value)
 
+open("C:\\users\\penpen\\desktop\\python\\html2.html")

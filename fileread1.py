@@ -1,4 +1,4 @@
-textfile="result.txt"
+textfile="html1.html"
 f=open(textfile,"r")
 while True:
   line = f.readline()
